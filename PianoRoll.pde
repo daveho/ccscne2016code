@@ -97,7 +97,7 @@ void draw() {
     
     for (NoteEvent evt : noteEvents) {
       // Draw notes based on on/off events
-      int instrNum = instrMap.get(evt.getInstrument());
+      int instrNum = instrMap.get(evt.instrument);
       if (evt.isNoteOn()) {
         if (countOn[instrNum] == 0) {
           on[instrNum] = evt.timeStamp;
