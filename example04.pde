@@ -15,9 +15,9 @@ Figure hihat2f = pf(hihat2r, 46, drumkit);
 Figure percf = gf(kickf, snaref, hihatf, hihat2f);
 
 Rhythm bassr = r(s(0, .5), s(.5, .5), s(1.5, .5), s(2, .5));
-Melody bass1m = m(-7, -7, -14, -7);
-Melody bass2m = m(-8, -15, -13, -6);
-Figure bass1f = f(bassr, bass1m, bass);
+Melody bass1m = m(-7, -7, -14, -7);     // m=create melody with specified notes/chords
+Melody bass2m = m(-8, -15, -13, -6);    // note numbers are relative to scale's start note
+Figure bass1f = f(bassr, bass1m, bass); // f=create melodic figure w/ rhythm, melody, instrument
 Figure bass2f = f(bassr, bass2m, bass);
 
 add1(gf(percf, bass1f));
