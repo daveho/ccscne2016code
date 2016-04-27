@@ -76,10 +76,6 @@ void mouseClicked() {
   fws.play(c);
 }
 
-void onNoteEvent(NoteEvent evt) {
-  println("NoteEvent!");
-}
-
 void registerCustomInstruments(Player player) {
   CustomInstrumentFactory factory = new CustomInstrumentFactoryImpl(
     0, new CustomInstrumentFactoryImpl.CreateCustomInstrument() {

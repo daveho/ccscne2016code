@@ -64,7 +64,3 @@ void draw() {
 void mouseClicked() {
   fws.play(c);
 }
-
-void onNoteEvent(NoteEvent evt) {
-  println("NoteEvent!");
-}
