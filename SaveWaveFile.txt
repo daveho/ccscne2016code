@@ -1,24 +1,6 @@
 import io.github.daveho.funwithsound.*;
 
-class MyFWS extends FunWithSound {
-  public MyFWS(PApplet parent) {
-    super(parent);
-  }
-  
-  public void saveWaveFile(MyComp c, String fileName) {
-    Player player = createPlayer();
-    player.setComposition(c.getComposition());
-    try {
-      player.setStartDelayUs(50000L);
-      player.setIdleWaitUs(2000000L);
-      player.saveWaveFile(fileName);
-    } catch (Exception e) {
-      println("Couldn't save wave file: " + e.toString());
-    }
-  }
-};
-
-MyFWS fws = new MyFWS(this);
+FunWithSound fws = new FunWithSound(this);
 
 String SOUNDFONTS = "/home/dhovemey/SoundFonts";               // Where the soundfonts are
 String FLUID = SOUNDFONTS + "/fluid/FluidR3 GM2-2.SF2";   // Very good general-purpose soundfont
