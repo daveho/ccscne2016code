@@ -2,9 +2,9 @@ tempo(200, 4);                              // 200 beats per minute, 4 beats per
 Instrument drumkit = percussion(FLUID);     // percussion instrument
 
 Rhythm kickr = r(p(0), p(1), p(4), p(4.5)); // r=create rhythm, p=create percussive strike
-Figure kickf = pf(kickr, 36, drumkit);      // pf=create percussive figure
+Figure kickf = pf(kickr, 36, drumkit);      // pf=create percussive figure, 36="Bass drum 1"
 Rhythm snarer = r(p(2), p(6));
-Figure snaref = pf(snarer, 38, drumkit);
+Figure snaref = pf(snarer, 38, drumkit);    // 38="Acoustic snare"
 
 Figure percf = gf(kickf, snaref);           // gf=combine figures into one figure
 
