@@ -1,5 +1,5 @@
 tempo(200, 4);
-melodicMinor(56); // A minor
+naturalMinor(56); // A minor
 Instrument drumkit = percussion(TR808);
 Instrument bass = instr(FLUID, 39); // synth bass 1
 
